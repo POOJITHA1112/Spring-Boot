@@ -1,0 +1,41 @@
+2023-06-16 16:59:10.639  INFO 11772 --- [restartedMain] com.Application                          : Starting Application using Java 11.0.17 on Poojitha with PID 11772 (C:\Users\User\StsWorkSpace\SpringBoot\05SLF4j\target\classes started by User in C:\Users\User\StsWorkSpace\SpringBoot\05SLF4j)
+2023-06-16 16:59:10.639  INFO 11772 --- [restartedMain] com.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-06-16 16:59:12.864  INFO 11772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-16 16:59:12.865  INFO 11772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-16 16:59:13.140  INFO 11772 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-16 16:59:13.155  INFO 11772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-16 16:59:14.186  INFO 11772 --- [restartedMain] com.Application                          : Started Application in 4.052 seconds (JVM running for 5.165)
+2023-06-16 16:59:39.728  INFO 11772 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-16 16:59:41.028  WARN 11772 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [257] milliseconds.
+2023-06-16 16:59:43.587  INFO 11772 --- [http-nio-8080-exec-2] com.service.ServiceImpl                  : controller getAll
+2023-06-16 16:59:43.588  INFO 11772 --- [http-nio-8080-exec-2] com.service.ServiceImpl                  : service getAll method
+2023-06-16 16:59:43.611  INFO 11772 --- [http-nio-8080-exec-2] com.dao.DaoImpl                          : dao get all started
+2023-06-16 16:59:43.627  INFO 11772 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-16 16:59:44.138  INFO 11772 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-16 16:59:44.181  INFO 11772 --- [http-nio-8080-exec-2] com.dao.DaoImpl                          : dao get all ended here
+2023-06-16 16:59:51.665  INFO 11772 --- [http-nio-8080-exec-3] com.service.ServiceImpl                  : service getbyid
+2023-06-16 16:59:51.669  INFO 11772 --- [http-nio-8080-exec-3] com.dao.DaoImpl                          : dao getbyid started here
+2023-06-16 16:59:51.719  INFO 11772 --- [http-nio-8080-exec-3] com.service.ServiceImpl                  : service getbyid
+2023-06-16 16:59:51.719  INFO 11772 --- [http-nio-8080-exec-3] com.dao.DaoImpl                          : dao getbyid started here
+2023-06-16 16:59:56.725  INFO 11772 --- [http-nio-8080-exec-4] com.service.ServiceImpl                  : service update
+2023-06-16 16:59:56.731  INFO 11772 --- [http-nio-8080-exec-4] com.dao.DaoImpl                          : dao update started
+2023-06-16 16:59:56.738  INFO 11772 --- [http-nio-8080-exec-4] com.dao.DaoImpl                          : dao update ended here
+2023-06-16 16:59:56.738  INFO 11772 --- [http-nio-8080-exec-4] com.service.ServiceImpl                  : controller update
+2023-06-16 16:59:56.756  INFO 11772 --- [http-nio-8080-exec-5] com.service.ServiceImpl                  : controller getAll
+2023-06-16 16:59:56.756  INFO 11772 --- [http-nio-8080-exec-5] com.service.ServiceImpl                  : service getAll method
+2023-06-16 16:59:56.756  INFO 11772 --- [http-nio-8080-exec-5] com.dao.DaoImpl                          : dao get all started
+2023-06-16 16:59:56.764  INFO 11772 --- [http-nio-8080-exec-5] com.dao.DaoImpl                          : dao get all ended here
+2023-06-16 17:01:07.239  INFO 11772 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-16 17:01:07.243  INFO 11772 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-16 17:01:07.250  WARN 11772 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.17/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.17/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.17/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.17/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.17/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.17/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.17/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.17/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.17/java.lang.Thread.run(Thread.java:834)
+2023-06-16 17:01:07.262  INFO 11772 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-16 17:01:07.282  INFO 11772 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
